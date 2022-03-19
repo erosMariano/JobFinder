@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>JobFinder | Login</title>
+        <title>JobFinder</title>
       </Head>
       <Container>
         <Container__image widthImagemProps={widthImagem} PropsAnimated={ativarSegundaTela}>
@@ -55,7 +55,9 @@ export default function Home() {
         ) : (
           <>
 
-
+            <Head>
+              <title>JobFinder | Login</title>
+            </Head>
             <img src="/images/eclipse-solida-top.png" alt="" className="eclipe-solida-top" />
             <img src="/images/eclipse-solida-bottom.png" alt="" className="eclipe-solida-bottom" />
 
