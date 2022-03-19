@@ -1,8 +1,8 @@
 {
-  "name": "Next.JS Progressive Web App",
-  "short_name": "Next PWA",
-  "theme_color": "#ffffff",
-  "background_color": "#004740",
+  "name": "Jobfinder",
+  "short_name": "Jobfinder",
+  "theme_color": "#FF4E25",
+  "background_color": "#1a1a1a",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
