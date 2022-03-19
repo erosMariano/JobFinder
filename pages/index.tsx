@@ -5,7 +5,7 @@ import { useState } from "react";
 import ButtonLaranja from "../src/components/ButtonLaranja";
 import {
   ArrowHome, ButtonHome, ButtonHome2, Container, Container__image, Container__Text, Form, LinkParaEmpresa, NotAccount, ResetPassword, SubtitlePaginaDois, Title, Title2
-} from "./styles";
+} from "../styles/styles";
 export default function Home() {
   const [widthImagem, setWidthImagem] = useState(300)
   const [ativarSegundaTela, setAtivarSegundaTela] = useState(true)
