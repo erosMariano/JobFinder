@@ -16,12 +16,21 @@ export default function Document() {
                 <meta name="keywords" content="Keywords" />
 
                 <link rel="manifest" href="/manifest.json" />
-
-                <link rel="apple-touch-icon" href="/apple-icon.png" />
-                <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
+                <link
+                    href="/icons/icon-32x32.png"
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                />
+                <link
+                    href="/icons/icon-512x512.png"
+                    rel="icon"
+                    type="image/png"
+                    sizes="512x512"
+                />
+                <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
                 <meta name="theme-color" content="#1a1a1a" />
 
-                <link rel="icon" type="image/png" href="/icons/icon-512x512.png" />
                 <meta name="description" content="Plataforma para encontrar o próximo emprego como Designer" />
             </Head>
             <body>
