@@ -16,20 +16,9 @@ export default function Document() {
                 <meta name="keywords" content="Keywords" />
 
                 <link rel="manifest" href="/manifest.json" />
-                {/* <link
-                    href="/icons/icon-16x16.png"
-                    rel="icon"
-                    type="image/png"
-                    sizes="16x16"
-                />
-                <link
-                    href="/icons/icon-32x32.png"
-                    rel="icon"
-                    type="image/png"
-                    sizes="32x32"
-                /> */}
+
                 <link rel="apple-touch-icon" href="/apple-icon.png" />
-                <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-ico" />
+                <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
                 <meta name="theme-color" content="#1a1a1a" />
 
                 <link rel="icon" type="image/png" href="/icons/icon-512x512.png" />
