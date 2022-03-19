@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import ButtonLaranja from "../src/components/ButtonLaranja";
 import {
   ArrowHome, ButtonHome, ButtonHome2, Container, Container__image, Container__Text, Form, LinkParaEmpresa, NotAccount, ResetPassword, SubtitlePaginaDois, Title, Title2
@@ -59,7 +59,10 @@ export default function Home() {
               <title>JobFinder | Login</title>
             </Head>
             <img src="/images/eclipse-solida-top.png" alt="" className="eclipe-solida-top" />
-            <img src="/images/eclipse-solida-bottom.png" alt="" className="eclipe-solida-bottom" />
+
+            <div className="containerImagem">
+              <img src="/images/eclipse-solida-bottom.png" alt="" className="eclipe-solida-bottom" />
+            </div>
 
             <img src="/images/eclipse-esquerda-top.png" alt="" className="eclipe-left" />
             <img src="/images/eclipse-direita-bottom.png" alt="" className="eclipe-direita" />

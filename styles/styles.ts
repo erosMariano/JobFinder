@@ -8,7 +8,6 @@ export const Container = styled.main`
   color: #fff;
 
   text-align: center;
-  overflow-x: hidden;
   padding-bottom: 108px;
   .eclipe-left{
     position: absolute;
@@ -27,6 +26,16 @@ export const Container = styled.main`
     width: 100%;
   }
 
+
+  .containerImagem{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+  }
   .eclipe-solida-top{
     position: absolute;
     left: -57px;
@@ -34,9 +43,9 @@ export const Container = styled.main`
   }
   .eclipe-solida-bottom{
     position: absolute;
+    animation: .2s eclipseSolidoBottom linear forwards;
     right: 0px;
     bottom: 0px;
-    animation: .2s eclipseSolidoBottom linear forwards;
   }
   
   @keyframes eclipseSolidoTop{
@@ -58,8 +67,8 @@ export const Container = styled.main`
   }
 `
 interface PropsContainer__image {
-    widthImagemProps: number;
-    PropsAnimated: boolean;
+  widthImagemProps: number;
+  PropsAnimated: boolean;
 }
 export const Container__image = styled.div<PropsContainer__image>`
 
