@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 
 export const Container = styled.main`
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background: #000000;
   color: #fff;
 
