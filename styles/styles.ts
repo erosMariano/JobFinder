@@ -3,24 +3,23 @@ import styled from "styled-components";
 
 
 export const Container = styled.main`
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   background: #000000;
   color: #fff;
 
   text-align: center;
   padding-bottom: 108px;
   .eclipe-left{
-    position: absolute;
     left: 0;
     top: 0;
     pointer-events: none;
     overflow: hidden;
     width: 100%;
+    position: fixed;
   }
 
   .eclipe-direita{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     pointer-events: none;
@@ -32,13 +31,13 @@ export const Container = styled.main`
     overflow: hidden;
     width: 200px;
     height: 200px;
-    position: absolute;
+    position: fixed;
     right: 0px;
     bottom: 0px;
     pointer-events: none;
   }
   .eclipe-solida-top{
-    position: absolute;
+    position: fixed;
     left: -57px;
     animation: .2s eclipseSolidoTop linear forwards;
   }
@@ -136,6 +135,7 @@ export const Container__image = styled.div<PropsContainer__image>`
 
 export const Container__Text = styled.div`
   padding: 0 16px;
+ background: #000;
 `
 
 export const Title = styled.h1`

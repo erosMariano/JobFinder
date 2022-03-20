@@ -38,7 +38,7 @@ export default function Home() {
         </Container__image>
 
         {ativarSegundaTela ? (
-          <Container__Text>
+          <> <Container__Text>
             <Title>Olá Designer,pronto para dar um <span>salto de carreira?</span></Title>
             <ButtonHome onClick={() => ativarForm()}><ButtonLaranja heightButton={"56px"} widthButton={"283px"} text="Começar agora" /></ButtonHome>
 
@@ -49,11 +49,12 @@ export default function Home() {
               <Image src="/images/icons/arrowLink.svg" width={5.32} height={8.62} />
             </ArrowHome>
 
+          </Container__Text>
             <img src="/images/eclipse-esquerda-top.png" alt="" className="eclipe-left" />
             <img src="/images/eclipse-direita-bottom.png" alt="" className="eclipe-direita" />
-          </Container__Text>
+          </>
         ) : (
-          <>
+          <div style={{ background: '#000' }}>
 
             <Head>
               <title>JobFinder | Login</title>
@@ -103,7 +104,7 @@ export default function Home() {
               </Link>
               <Image src="/images/icons/arrowLink.svg" width={5.32} height={8.62} />
             </NotAccount>
-          </>
+            </div>
         )}
 
       </Container>
