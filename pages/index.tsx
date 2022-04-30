@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 import React, { useState } from "react";
 import ButtonLaranja from "../src/components/ButtonLaranja";
 import {
@@ -22,6 +23,10 @@ export default function Home() {
       setTypeInputPassoword("password")
 
     }
+  }
+
+  function entrarInApp(){
+      Router.router?.push("/home")
   }
 
   return (
@@ -95,7 +100,7 @@ export default function Home() {
               </Link>
             </ResetPassword>
 
-            <ButtonHome2><ButtonLaranja heightButton={"48px"} widthButton={"332px"} text="Entrar" /></ButtonHome2>
+            <ButtonHome2 onClick={() => entrarInApp()}><ButtonLaranja heightButton={"48px"} widthButton={"332px"} text="Entrar" /></ButtonHome2>
 
 
             <NotAccount>
